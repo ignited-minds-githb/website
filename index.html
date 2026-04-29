@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ignited Minds – Empowering Students, Transforming Lives</title>
+  <meta name="description" content="Ignited Minds is a social initiative dedicated to mentoring and guiding students towards success through free mentorship and career guidance.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        Ignited Minds
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#vision">Vision & Mission</a></li>
+        <li><a href="#mentors">Mentors</a></li>
+        <li><a href="#stories">Success Stories</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">🌟 A Social Initiative for Students</div>
+      <h1 class="hero-title">
+        Lighting the Path to<br>
+        <span class="highlight">Brighter Futures</span>
+      </h1>
+      <p class="hero-description">
+        We are a community of passionate mentors dedicated to guiding students from
+        underprivileged backgrounds towards academic excellence and career success — completely free of cost.
+      </p>
+      <div class="hero-buttons">
+        <a href="#stories" class="btn btn-primary">🎓 Success Stories</a>
+        <a href="#mentors" class="btn btn-outline">👥 Meet Our Mentors</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ===== VISION & MISSION ===== -->
+  <section class="section vision-section" id="vision">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-badge">Our Purpose</span>
+        <h2 class="section-title">Vision & Mission</h2>
+        <p class="section-subtitle">Driven by a belief that every student deserves guidance, regardless of their background.</p>
+      </div>
+
+      <div class="vision-grid fade-up">
+        <div class="vision-card">
+          <div class="vision-icon">🔭</div>
+          <h3>Our Vision</h3>
+          <p>To create a world where no student is left behind due to lack of guidance or resources. We envision a future where every talented mind, regardless of socio-economic background, gets the mentorship they need to achieve their full potential and contribute meaningfully to society.</p>
+        </div>
+        <div class="vision-card">
+          <div class="vision-icon">🎯</div>
+          <h3>Our Mission</h3>
+          <p>To provide free, high-quality mentorship and career guidance to students from underprivileged backgrounds. We connect experienced professionals and educators with aspiring students, offering personalized guidance, emotional support, and practical resources to help them succeed in academics and beyond.</p>
+        </div>
+      </div>
+
+      <div class="vision-values fade-up">
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="value-emoji">💡</div>
+            <h4>Inspire</h4>
+            <p>Ignite curiosity and ambition</p>
+          </div>
+          <div class="value-item">
+            <div class="value-emoji">🤝</div>
+            <h4>Guide</h4>
+            <p>Personalized mentorship</p>
+          </div>
+          <div class="value-item">
+            <div class="value-emoji">📚</div>
+            <h4>Educate</h4>
+            <p>Free learning resources</p>
+          </div>
+          <div class="value-item">
+            <div class="value-emoji">🚀</div>
+            <h4>Empower</h4>
+            <p>Build confidence & skills</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENTORS ===== -->
+  <section class="section mentors-section" id="mentors">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-badge green">Our Team</span>
+        <h2 class="section-title">Meet Our Mentors</h2>
+        <p class="section-subtitle">Experienced professionals and educators who volunteer their time to shape the future of students.</p>
+      </div>
+      <div class="mentors-grid fade-up" id="mentorsGrid">
+        <!-- Mentors loaded dynamically from data/mentors.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMPACT NUMBERS ===== -->
+  <section class="impact-section">
+    <div class="container">
+      <div class="impact-grid fade-up">
+        <div class="impact-item">
+          <div class="impact-number" data-count="50">0</div>
+          <div class="impact-label">Students Mentored</div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-number" data-count="10">0</div>
+          <div class="impact-label">Volunteer Mentors</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SUCCESS STORIES ===== -->
+  <section class="section students-section" id="stories">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-badge">Inspiration</span>
+        <h2 class="section-title">Success Stories</h2>
+        <p class="section-subtitle">Real journeys of students who turned their dreams into reality with the right guidance and determination.</p>
+      </div>
+      <div class="students-grid fade-up" id="studentsGrid">
+        <!-- Students loaded dynamically from data/students.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-badge green">Memories</span>
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-subtitle">Moments captured during our sessions, events, and celebrations.</p>
+      </div>
+      <div class="gallery-filters fade-up">
+        <button class="gallery-filter active" data-filter="all">All</button>
+        <button class="gallery-filter" data-filter="sessions">Sessions</button>
+        <button class="gallery-filter" data-filter="events">Events</button>
+        <button class="gallery-filter" data-filter="celebrations">Celebrations</button>
+      </div>
+      <div class="gallery-grid fade-up" id="galleryGrid">
+        <!-- Gallery loaded dynamically from data/gallery.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-content fade-up">
+        <h2>Want to Join the Movement?</h2>
+        <p>Whether you're a student seeking guidance or a professional wanting to give back — we welcome you with open arms.</p>
+        <div class="hero-buttons">
+          <a href="mailto:ignitedminds@example.com" class="btn btn-primary">✉️ Get in Touch</a>
+          <a href="#mentors" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">Become a Mentor</a>
+        </div>
+        <p class="cta-handwritten">"You have to dream before your dreams can come true." – Dr. APJ Abdul Kalam</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Ignited Minds</div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#vision">Vision</a>
+          <a href="#mentors">Mentors</a>
+          <a href="#stories">Stories</a>
+          <a href="#gallery">Gallery</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with ❤️ for Students | &copy; 2026 Ignited Minds. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+
+  <!-- ===== DATA FILES ===== -->
+  <script src="data/mentors.js"></script>
+  <script src="data/students.js"></script>
+  <script src="data/gallery.js"></script>
+
+  <!-- ===== MAIN SCRIPT ===== -->
+  <script>
+    // ---- Navbar scroll effect ----
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // ---- Mobile nav toggle ----
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+    // ---- Active nav link on scroll ----
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY + 100;
+      sections.forEach(sec => {
+        const top = sec.offsetTop;
+        const height = sec.offsetHeight;
+        const id = sec.getAttribute('id');
+        const link = navLinks.querySelector(`a[href="#${id}"]`);
+        if (link) link.classList.toggle('active', scrollY >= top && scrollY < top + height);
+      });
+    });
+
+    // ---- Render Mentors ----
+    const mentorsGrid = document.getElementById('mentorsGrid');
+    mentorsData.forEach(m => {
+      mentorsGrid.innerHTML += `
+        <div class="mentor-card">
+          <a href="${m.linkedin}" class="mentor-linkedin" target="_blank" title="LinkedIn">🔗</a>
+          <div class="mentor-photo">
+            <img src="${m.photo}" alt="${m.name}" loading="lazy">
+            <div class="overlay"></div>
+          </div>
+          <div class="mentor-info">
+            <h3>${m.name}</h3>
+            <div class="mentor-role">${m.role}</div>
+            <p class="mentor-bio">${m.bio}</p>
+            <div class="mentor-tags">
+              ${m.expertise.map(e => `<span class="mentor-tag">${e}</span>`).join('')}
+            </div>
+          </div>
+        </div>`;
+    });
+
+    // ---- Render Students ----
+    const studentsGrid = document.getElementById('studentsGrid');
+    studentsData.forEach(s => {
+      studentsGrid.innerHTML += `
+        <div class="student-card">
+          <div class="student-header">
+            <div class="student-avatar"><img src="${s.photo}" alt="${s.name}" loading="lazy"></div>
+            <div class="student-meta">
+              <h3>${s.name}</h3>
+              <div class="student-achievement">${s.achievement}</div>
+              <div class="student-year">Class of ${s.year}</div>
+            </div>
+          </div>
+          <p class="student-story">${s.story}</p>
+          <div class="student-tags">
+            ${s.tags.map(t => `<span class="student-tag">${t}</span>`).join('')}
+          </div>
+        </div>`;
+    });
+
+    // ---- Render Gallery ----
+    const galleryGrid = document.getElementById('galleryGrid');
+    function renderGallery(filter = 'all') {
+      galleryGrid.innerHTML = '';
+      const items = filter === 'all' ? galleryData : galleryData.filter(g => g.category === filter);
+      items.forEach(g => {
+        if (g.type === 'video') {
+          galleryGrid.innerHTML += `
+            <div class="gallery-item" data-category="${g.category}">
+              <iframe src="${g.src}" allowfullscreen loading="lazy"></iframe>
+              <div class="gallery-caption">${g.caption}</div>
+            </div>`;
+        } else {
+          galleryGrid.innerHTML += `
+            <div class="gallery-item" data-category="${g.category}" onclick="openLightbox('${g.src.replace(/w=600/, 'w=1200').replace(/h=400/, 'h=800')}')">
+              <img src="${g.src}" alt="${g.caption}" loading="lazy">
+              <div class="gallery-caption">${g.caption}</div>
+            </div>`;
+        }
+      });
+    }
+    renderGallery();
+
+    // Gallery filters
+    document.querySelectorAll('.gallery-filter').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.gallery-filter').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderGallery(btn.dataset.filter);
+      });
+    });
+
+    // ---- Lightbox ----
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    function openLightbox(src) {
+      lightboxImg.src = src;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    document.getElementById('lightboxClose').addEventListener('click', () => {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) { lightbox.classList.remove('active'); document.body.style.overflow = ''; }
+    });
+
+    // ---- Counter Animation ----
+    const counters = document.querySelectorAll('.impact-number[data-count]');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = +el.dataset.count;
+          let current = 0;
+          const step = Math.ceil(target / 60);
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) { current = target; clearInterval(timer); }
+            el.textContent = current + (el.closest('.impact-item').querySelector('.impact-label').textContent.includes('%') ? '%' : '+');
+          }, 25);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => counterObserver.observe(c));
+
+    // ---- Fade-up on scroll ----
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    fadeEls.forEach(el => fadeObserver.observe(el));
+  </script>
+
+</body>
+</html>
