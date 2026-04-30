@@ -52,7 +52,7 @@ const mentorsData = [
   {
     name: "Dr. Sanjay Patidar",
     role: "Professor at DTU",
-    photo: "Ashish Patidar Photo.jpg",
+    photo: "Sanjay Patidar.jpg",
     bio: "Initiator of the Ignited Minds vision and a professor in Computer Science and Software Engineering at DTU. Dedicated to inspiring and guiding students to achieve their highest potential.",
     linkedin: "#",
     expertise: ["Visionary", "Computer Science", "Software Engineering"]
@@ -68,7 +68,7 @@ const mentorsData = [
   {
     name: "Jyoti Patidar",
     role: "PhD Scholar in Software Engineering",
-    photo: "Ashish Patidar Photo.jpg",
+    photo: "Jyoti Patidar.jpg",
     bio: "Pursuing PhD in Software Engineering and one of the important mentors of Ignited Minds. Passionate about research and guiding students in their academic and professional journeys.",
     linkedin: "#",
     expertise: ["Software Engineering", "Research", "Mentorship"]
@@ -76,7 +76,7 @@ const mentorsData = [
   {
     name: "You?",
     role: "Become a Mentor!",
-    photo: "Ashish Patidar Photo.jpg",
+    photo: "",
     bio: "We are always looking for passionate mentors who truly want to help students. If you want to join us as a mentor, contact us — you are most welcome!",
     linkedin: "mailto:ignitedminds@example.com",
     expertise: ["Mentorship", "Inspiration", "Support"]
