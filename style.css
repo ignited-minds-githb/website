@@ -385,6 +385,86 @@ ul { list-style: none; }
   100% { opacity: 0; top: 20px; }
 }
 
+/* ===== SANSKRIT SHLOKA ===== */
+.sanskrit-shloka {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  margin: 64px auto 0;
+  padding: 32px 40px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius);
+  border: 3px solid transparent;
+  background-image:
+    linear-gradient(white, white),
+    linear-gradient(135deg, #ff9933 0%, #ffffff 25%, #138808 50%, #ffffff 75%, #ff9933 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow:
+    var(--shadow-md),
+    0 0 20px rgba(255, 153, 51, 0.15),
+    inset 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.sanskrit-shloka::before {
+  content: '🕉️';
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  background: linear-gradient(135deg, #ff9933, #138808);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.sanskrit-shloka::after {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(255, 153, 51, 0.2);
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.shloka-text {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  background: linear-gradient(135deg, #ff6600, #ff9933, #138808);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.shloka-text::after {
+  content: '✦ ❁ ✦';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: #ff9933;
+  letter-spacing: 8px;
+}
+
+.shloka-meaning {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: var(--text-light);
+  font-style: italic;
+  line-height: 1.7;
+  font-family: 'Inter', sans-serif;
+}
+
 /* ===== VISION & MISSION ===== */
 .vision-section {
   background: var(--light);
